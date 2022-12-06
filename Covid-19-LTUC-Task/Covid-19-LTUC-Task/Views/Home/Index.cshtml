@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div>
+    <label style="color: red"> Total Confirmed </label>
+    <span style="color: blue" id="TotalConfirmed">
+
+    </span>
+    <label style="color: red"> Total Deaths </label>
+    <span style="color: blue"id="TotalDeaths">
+
+    </span>
+    <label style="color: red"> Total Recoverd </label>
+    <span style="color: blue" id="TotalRecovered">
+
+    </span>
+</div>
+
+
+<form>
+
+    <input class="form-group" type="text" id="Country" />
+    <input class="form-group" type="date" id="FromDate" />
+    <input class="form-group" type="date" id="ToDate" />
+    <button class="form-group" type="button" id="btnSearch">Search</button>
+</form>
+
+<div class="container">
+    <div class="row MyDiv">
+        
+
+    </div>
+</div>
+
+
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/CovidApi/CovidApi.js"></script>

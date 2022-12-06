@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div>
+    <label> Total Confirmed </label>
+    <span id="TotalConfirmed">
+
+    </span>
+    <label> Total Deaths </label>
+    <span id="TotalDeaths">
+
+    </span>
+    <label> Total Recoverd </label>
+    <span id="TotalRecovered">
+
+    </span>
+</div>
+
+
+<form>
+    <input type="text" id="Country" />
+    <input type="date" id="FromDate" />
+    <input type="date" id="ToDate" />
+    <button type="button" id="btnSearch">Search</button>
+</form>
+
+@*<div class="container">
+            <div class=" col-xl-3 col-md-6 mb-4">
+                <div id="MyDiv" class=" col-md-4">
+
+                </div>
+            </div>
+    </div>*@
+
+<div class="col-xl-3 col-md-6 mb-4">
+    <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+            <div class="row no-gutters align-items-center">
+                <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Confirmed Cases</div>
+                    <div class="meta-badge" style="        background: #4e73df;
+        display: flex;">
+                        <span>+ </span>
+                        <div id="MyDiv" class="Count ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/CovidApi/AllCountries.js"></script>
